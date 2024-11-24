@@ -96,3 +96,21 @@ body {
     margin-right: 8px;
     font-size: 20px;
 }
+
+.image-container {
+    text-align: center; /* Centers the image horizontally */
+    margin: 20px auto; /* Adds space above and below the image */
+}
+
+.small-image {
+    max-width: 200px; /* Ensures the image is small */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners to the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.small-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
