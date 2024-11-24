@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    text-align: center; /* Centers all text by default */
+    text-align: center; /* Ensures text in body defaults to centered alignment */
 }
 
 /* Navbar styling */
@@ -51,16 +51,16 @@ body {
 
 /* Welcome text styling */
 .welcome-text {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 40px auto; /* Adds space above and below */
+    font-size: 24px; /* Large text size */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Neutral dark color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
 }
 
 .welcome-text:hover {
-    transform: scale(1.1);
-    color: #f0a500;
+    transform: scale(1.1); /* Slightly scales the text */
+    color: #f0a500; /* Changes the color to orange */
 }
 
 /* Container styling */
