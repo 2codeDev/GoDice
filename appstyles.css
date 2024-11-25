@@ -33,6 +33,44 @@ main {
     background-color: #ffffff;
 }
 
+main.dice-section {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dice-item {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.claim-button {
+    margin-left: auto;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.claim-button:hover {
+    background-color: #218838;
+}
+
+.claim-button:active {
+    background-color: #1e7e34;
+}
+
+/* Hover effect */
+.dice-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Homebar styling */
 .homebar {
     display: flex;
@@ -51,8 +89,9 @@ main {
     background: none;
     border: none;
     color: #333;
-    cursor: pointer;
+    text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
 
 .homebar-button:hover {
