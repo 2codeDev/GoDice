@@ -18,6 +18,18 @@ body.fade-in {
     }
 }
 
+@media (max-width: 768px) {
+    .clickable-image img {
+        width: 200px; /* Slightly larger size for tablets and small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .clickable-image img {
+        width: 160px; /* Slightly larger for extra-small devices */
+    }
+}
+
 /* Container styling */
 .container {
     display: flex;
@@ -50,10 +62,10 @@ main p {
 
 /* Clickable image styling */
 .clickable-image img {
-    max-width: 90%; /* Limit the width to 90% of the parent container */
+    max-width: 95%; /* Limit the width to 95% of the parent container */
     height: auto; /* Maintain aspect ratio */
-    width: 200px; /* Default size for larger screens */
-    max-height: 400px; /* Optional: limit the height */
+    width: 250px; /* Default size for larger screens */
+    max-height: 450px; /* Optional: limit the height */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
