@@ -192,3 +192,10 @@ main.dice-section {
     cursor: default;
     pointer-events: none;
 }
+.new-label {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 0.5rem; /* Adds spacing between the text and "NEW" */
+}
+
