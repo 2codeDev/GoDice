@@ -20,13 +20,13 @@ body.fade-in {
 
 @media (max-width: 768px) {
     .clickable-image img {
-        width: 200px; /* Slightly larger size for tablets and small screens */
+        width: 300px; /* Larger size for tablets and smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .clickable-image img {
-        width: 160px; /* Slightly larger for extra-small devices */
+        width: 250px; /* Larger size for small mobile devices */
     }
 }
 
@@ -62,10 +62,10 @@ main p {
 
 /* Clickable image styling */
 .clickable-image img {
-    max-width: 95%; /* Limit the width to 95% of the parent container */
+    max-width: 100%; /* Allow the image to take up full width of the container if needed */
     height: auto; /* Maintain aspect ratio */
-    width: 250px; /* Default size for larger screens */
-    max-height: 450px; /* Optional: limit the height */
+    width: 350px; /* Larger default size for desktops and larger screens */
+    max-height: 600px; /* Optional: limit the height for very large images */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
