@@ -6,6 +6,18 @@ body, html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Page fade-in animation */
+body.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 /* Container styling */
 .container {
     display: flex;
@@ -19,6 +31,79 @@ header {
     text-align: center;
     padding: 1rem;
 }
+
+/* Center content styling for main section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Clickable image styling */
+.clickable-image img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Adjust size as needed */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Homebar styling */
+.homebar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    position: sticky;
+    bottom: 0;
+}
+
+.homebar-button {
+    display: flex;
+    flex-direction: column; /* Arrange icon and text vertically */
+    align-items: center;   /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.homebar-button:hover {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.homebar-button:active {
+    background-color: #ccc;
+}
+
+.homebar-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem; /* Add spacing between the icon and the text */
+}
+
 
 /* Yellow info box for h1 */
 .info-box {
@@ -92,46 +177,4 @@ main.dice-section {
     color: white;
     cursor: default;
     pointer-events: none;
-}
-
-/* Homebar styling */
-.homebar {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ddd;
-    position: sticky;
-    bottom: 0;
-}
-
-.homebar-button {
-    display: flex;
-    flex-direction: column; /* Arrange icon and text vertically */
-    align-items: center;   /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    flex: 1;
-    padding: 0.5rem;
-    font-size: 1rem;
-    background: none;
-    border: none;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-.homebar-button:hover {
-    background-color: #e0e0e0;
-    border-radius: 8px;
-}
-
-.homebar-button:active {
-    background-color: #ccc;
-}
-
-.homebar-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0.5rem; /* Add spacing between the icon and the text */
 }
