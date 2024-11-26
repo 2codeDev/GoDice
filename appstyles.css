@@ -56,8 +56,8 @@ main.dice-section {
     color: white;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .claim-button:hover {
@@ -66,6 +66,14 @@ main.dice-section {
 
 .claim-button:active {
     background-color: #1e7e34;
+}
+
+/* Claimed button state */
+.claim-button.claimed {
+    background-color: #6c757d;
+    color: white;
+    cursor: default;
+    pointer-events: none;
 }
 
 /* Homebar styling */
