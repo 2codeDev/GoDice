@@ -199,3 +199,10 @@ main.dice-section {
     margin-left: 0.5rem; /* Adds spacing between the text and "NEW" */
 }
 
+.date-label {
+    display: block; /* Ensures it appears on a new line */
+    font-size: 0.8rem; /* Smaller font size */
+    color: #555; /* Muted gray color */
+    margin-top: 0.3rem; /* Spacing between the button and the date text */
+    text-align: left; /* Aligns text to match the button */
+}
