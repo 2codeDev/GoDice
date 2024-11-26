@@ -81,7 +81,6 @@ main.dice-section {
     color: white;
     cursor: default;
     pointer-events: none;
-    text-decoration: none; /* No underline after claiming */
 }
 
 /* Homebar styling */
@@ -96,9 +95,11 @@ main.dice-section {
 }
 
 .homebar-button {
+    display: flex;
+    align-items: center;
     flex: 1;
     padding: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background: none;
     border: none;
     color: #333;
@@ -114,4 +115,10 @@ main.dice-section {
 
 .homebar-button:active {
     background-color: #ccc;
+}
+
+.homebar-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
 }
