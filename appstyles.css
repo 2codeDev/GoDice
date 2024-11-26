@@ -37,7 +37,7 @@ main.dice-section {
 .dice-item {
     margin: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 80%;
     max-width: 400px;
@@ -48,7 +48,12 @@ main.dice-section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Claim button */
+.dice-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
 .claim-button {
     margin-left: 1rem;
     padding: 0.5rem 1rem;
@@ -58,18 +63,16 @@ main.dice-section {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .claim-button:hover {
     background-color: #218838;
-    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .claim-button:active {
     background-color: #1e7e34;
-    text-decoration: none; /* Ensure no underline on active state */
 }
 
 /* Claimed button state */
