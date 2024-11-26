@@ -83,9 +83,12 @@ main p {
     padding: 1rem;
     background-color: #f1f1f1;
     border-top: 1px solid #ddd;
-    position: sticky;
+    position: fixed; /* Changed from sticky to fixed */
     bottom: 0;
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    z-index: 10; /* Ensure it stays on top of other elements */
 }
+
 
 .homebar-button {
     display: flex;
