@@ -107,7 +107,9 @@ main.dice-section {
 
 .homebar-button {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Arrange icon and text vertically */
+    align-items: center;   /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     flex: 1;
     padding: 0.5rem;
     font-size: 1rem;
@@ -131,5 +133,5 @@ main.dice-section {
 .homebar-icon {
     width: 24px;
     height: 24px;
-    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; /* Add spacing between the icon and the text */
 }
