@@ -66,18 +66,53 @@ main {
     margin: 0.25rem 0; /* Reduce vertical spacing */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}/* Header styling */
+header {
+    text-align: center;
+    padding: 0; /* Remove extra padding */
+    margin-bottom: 0; /* Eliminate space below the header */
 }
+
+/* Logo image styling */
+.logo-image {
+    max-width: 30%; /* Maintain size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Remove padding */
+    margin-bottom: 0.5rem; /* Minimal space below logo */
+}
+
+/* Main content adjustments */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0; /* Remove unnecessary padding */
+    margin-top: 0; /* Ensure there's no gap above */
+    gap: 0.5rem; /* Control spacing between "Free Dice" and "Free Sticker" */
+}
+
+/* Clickable image styling */
+.clickable-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Maintain button size */
+    max-height: 500px;
+    margin: 0; /* Remove extra spacing */
+    margin-bottom: 0.5rem; /* Minimal space between images */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 main p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
-
-.clickable-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
 
 /* Homebar styling */
 .homebar {
