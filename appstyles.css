@@ -41,18 +41,18 @@ body.fade-in {
 /* Header styling */
 header {
     text-align: center;
-    padding: 0; /* Remove all padding */
-    margin-bottom: 0; /* No space below the header */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 /* Logo image styling */
 .logo-image {
-    max-width: 30%; /* Maintain size */
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 0 auto; /* Center horizontally */
-    padding: 0; /* No padding around the image */
-    margin-bottom: 0.2rem; /* Minimal gap below the logo */
+    padding: 0;
+    margin-bottom: 0; /* Remove all space below the logo */
 }
 
 /* Main content adjustments */
@@ -63,35 +63,21 @@ main {
     align-items: center;
     flex-grow: 1;
     text-align: center;
-    padding: 0; /* Remove padding */
-    margin: 0; /* No margin */
-    gap: 0.2rem; /* Minimal spacing between the clickable images */
+    padding: 0; /* Remove all padding */
+    margin: 0; /* Remove all margin */
+    gap: 0; /* Completely remove the spacing between items */
 }
 
 /* Clickable image styling */
 .clickable-image img {
     max-width: 100%;
     height: auto;
-    width: 300px; /* Adjust button size if needed */
+    width: 300px; /* Adjust image size as needed */
     max-height: 500px;
-    margin: 0; /* Remove unnecessary spacing */
-    margin-bottom: 0.2rem; /* Small gap between buttons */
+    margin: 0; /* Remove all margins */
+    padding: 0; /* Remove all padding */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-/* Main content adjustments */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    text-align: center;
-    padding: 0; /* Remove unnecessary padding */
-    margin-top: 0; /* Ensure there's no gap above */
-    gap: 0.5rem; /* Control spacing between "Free Dice" and "Free Sticker" */
 }
 
 main p {
