@@ -211,7 +211,7 @@ main.dice-section {
 }
 
 .logo-image {
-    max-width: 40%; /* Default size for larger screens */
+    max-width: 30%; /* Smaller size on all screens */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Center the image */
     margin: 0 auto; /* Horizontally center the image */
@@ -227,7 +227,7 @@ main.dice-section {
 
 @media (max-width: 480px) {
     .logo-image {
-        max-width: 80%; /* Increase size for small mobile devices */
+        max-width: 40%; /* Slightly larger on tiny screens for readability */
     }
 }
 
