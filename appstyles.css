@@ -211,11 +211,10 @@ main.dice-section {
 }
 
 .logo-image {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    max-width: 50%; /* Reduce width to 50% of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Horizontally center the image */
     padding: 1rem 0; /* Add spacing around the logo */
 }
-
 
