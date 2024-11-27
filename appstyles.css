@@ -209,8 +209,13 @@ main.dice-section {
     margin: 0.3rem 0; /* Spacing above and below */
     text-align: left; /* Aligns text with the "x25 Dice" text */
 }
-<header>
-    <img src="https://raw.githubusercontent.com/2codedev/GoDice/main/godice-logo.png" alt="GoDice Logo" class="logo-image">
-</header>
+
+.logo-image {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    padding: 1rem 0; /* Add spacing around the logo */
+}
 
 
