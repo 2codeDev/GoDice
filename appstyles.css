@@ -41,10 +41,11 @@ body.fade-in {
 /* Header styling */
 header {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem; /* Reduce padding */
+    margin-bottom: 0.5rem; /* Minimize space below the logo */
 }
 
-/* Center content styling for main section */
+/* Main content adjustments */
 main {
     display: flex;
     flex-direction: column;
@@ -52,22 +53,24 @@ main {
     align-items: center;
     flex-grow: 1;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem; /* Reduce padding */
+    gap: 0.5rem; /* Add this to control spacing between elements */
+}
+
+/* Clickable image styling */
+.clickable-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Slightly smaller size */
+    max-height: 500px; /* Optional: keep it within bounds */
+    margin: 0.25rem 0; /* Reduce vertical spacing */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 main p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-}
-
-/* Clickable image styling */
-.clickable-image img {
-    max-width: 100%; /* Allow the image to take up full width of the container if needed */
-    height: auto; /* Maintain aspect ratio */
-    width: 350px; /* Larger default size for desktops and larger screens */
-    max-height: 600px; /* Optional: limit the height for very large images */
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .clickable-image img:hover {
