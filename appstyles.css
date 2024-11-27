@@ -41,36 +41,8 @@ body.fade-in {
 /* Header styling */
 header {
     text-align: center;
-    padding: 0.5rem; /* Reduce padding */
-    margin-bottom: 0.5rem; /* Minimize space below the logo */
-}
-
-/* Main content adjustments */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    text-align: center;
-    padding: 0.5rem; /* Reduce padding */
-    gap: 0.5rem; /* Add this to control spacing between elements */
-}
-
-/* Clickable image styling */
-.clickable-image img {
-    max-width: 100%;
-    height: auto;
-    width: 300px; /* Slightly smaller size */
-    max-height: 500px; /* Optional: keep it within bounds */
-    margin: 0.25rem 0; /* Reduce vertical spacing */
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}/* Header styling */
-header {
-    text-align: center;
-    padding: 0; /* Remove extra padding */
-    margin-bottom: 0; /* Eliminate space below the header */
+    padding: 0; /* Remove all padding */
+    margin-bottom: 0; /* No space below the header */
 }
 
 /* Logo image styling */
@@ -79,9 +51,35 @@ header {
     height: auto;
     display: block;
     margin: 0 auto; /* Center horizontally */
-    padding: 0; /* Remove padding */
-    margin-bottom: 0.5rem; /* Minimal space below logo */
+    padding: 0; /* No padding around the image */
+    margin-bottom: 0.2rem; /* Minimal gap below the logo */
 }
+
+/* Main content adjustments */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Prevent extra space at the top */
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 0; /* Remove padding */
+    margin: 0; /* No margin */
+    gap: 0.2rem; /* Minimal spacing between the clickable images */
+}
+
+/* Clickable image styling */
+.clickable-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Adjust button size if needed */
+    max-height: 500px;
+    margin: 0; /* Remove unnecessary spacing */
+    margin-bottom: 0.2rem; /* Small gap between buttons */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 /* Main content adjustments */
 main {
@@ -95,19 +93,6 @@ main {
     margin-top: 0; /* Ensure there's no gap above */
     gap: 0.5rem; /* Control spacing between "Free Dice" and "Free Sticker" */
 }
-
-/* Clickable image styling */
-.clickable-image img {
-    max-width: 100%;
-    height: auto;
-    width: 300px; /* Maintain button size */
-    max-height: 500px;
-    margin: 0; /* Remove extra spacing */
-    margin-bottom: 0.5rem; /* Minimal space between images */
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 main p {
     font-size: 1.2rem;
